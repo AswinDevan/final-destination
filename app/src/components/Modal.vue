@@ -26,3 +26,10 @@ export default {
     name:'modalComp',
 }
 </script>
+<style scoped>
+@media screen and (max-width: 415px){
+  .modal{
+    padding: 20% 5% 15%;
+  }
+}
+</style>

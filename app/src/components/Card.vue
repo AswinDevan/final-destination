@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid text-center">
    <div class="row">
-    <div class="col-md-3 offset-md-1 mt-md-4 col-sm-5 offset-sm-1 mt-sm-2 col-xs-12 d-flex align-items-stretch" id="column" v-for="(detail,index) in details" :key="detail.id">
+    <div class="col-lg-3 offset-lg-1 col-md-5 offset-md-1 mt-md-4 col-sm-5 offset-sm-1 mt-sm-2 col-xs-12 d-flex align-items-stretch" id="column" v-for="(detail,index) in details" :key="detail.id">
       <div class="card" style="border:1px solid black">
         <div class="card-header bg-dark text-light">
           <h4>{{detail.title}}</h4>
@@ -71,6 +71,14 @@ export default {
 </script>
 
 <style scoped>
+
+h4{
+    white-space: nowrap ;
+    word-break: normal;
+    overflow: hidden ;
+    text-overflow: ellipsis;
+}
+
 
 @media screen and (min-width: 577px ) and (max-width:767px){
   .row{
